@@ -1,8 +1,10 @@
 # ActionDispatchTestPredicates
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/action_dispatch_test_predicates`. To experiment with that code, run `bin/console` for an interactive prompt.
+This gem brings back `success?`, `missing?`, and `error?` predicates on ActionDispatch::TestResponse which were removed with Rails 6.
 
-TODO: Delete this and the text above, and describe your gem
+Please don't use this gem! Please update your tests to use the appropriate predicate methods instead.
+
+This gem will continue to emit deprecation warnings to direct you at the preferred alternative if one of these predicates is used. The intention is that this gem would serve as a tool to ease migration for large code bases.
 
 ## Installation
 
@@ -20,10 +22,6 @@ Or install it yourself as:
 
     $ gem install action_dispatch_test_predicates
 
-## Usage
-
-TODO: Write usage instructions here
-
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
@@ -32,7 +30,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/action_dispatch_test_predicates. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/[USERNAME]/action_dispatch_test_predicates/blob/master/CODE_OF_CONDUCT.md).
+Bug reports and pull requests are welcome on GitHub at https://github.com/aergonaut/action_dispatch_test_predicates. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/aergonaut/action_dispatch_test_predicates/blob/master/CODE_OF_CONDUCT.md).
 
 
 ## License
@@ -41,4 +39,4 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 ## Code of Conduct
 
-Everyone interacting in the ActionDispatchTestPredicates project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/action_dispatch_test_predicates/blob/master/CODE_OF_CONDUCT.md).
+Everyone interacting in the ActionDispatchTestPredicates project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/aergonaut/action_dispatch_test_predicates/blob/master/CODE_OF_CONDUCT.md).
